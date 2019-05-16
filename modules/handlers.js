@@ -4,10 +4,15 @@ exports.upload = function (request, response) {
 	response.end();
 }
 
+var fs = require('fs');
+
 exports.welcome = function (request, response) {
 	console.log('I starting handling the welcome request.');
-	response.write('Welcome to the start page');
-	response.end();
+	fs.readFile('templates/start.html', function (err, html) {
+		response.writeHead(200, {"Content-Type": "text/html; charset=utf-8"});
+		response.write(html);
+		response.end();
+	});
 }
 
 exports.error = function (request, response) {

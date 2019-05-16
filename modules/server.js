@@ -1,6 +1,8 @@
 var http = require('http');
 var colors = require('colors');
 
+var handlers = require('./handlers');
+
 function start() {
 	function onRequest (request, response) {
 		console.log('An inquiry was received.'.green);
