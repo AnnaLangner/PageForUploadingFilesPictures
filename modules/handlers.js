@@ -12,6 +12,14 @@ exports.upload = function (request, response) {
 	});
 }
 
+exports.show = function (request, response) {
+	fs.readFile('test.png', "binary", function (error, file) {
+		response.writeHead(200, {"Content-Type": "image/png"});
+		response.write(file, "binary");
+		response.end();
+	});
+}
+
 var fs = require('fs');
 
 exports.welcome = function (request, response) {
