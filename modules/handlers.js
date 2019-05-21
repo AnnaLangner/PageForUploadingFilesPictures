@@ -1,4 +1,5 @@
 var formidable = require('formidable');
+var fs = require('fs');
 
 exports.upload = function (request, response) {
 	console.log('I start handling the upload request.');
@@ -20,7 +21,13 @@ exports.show = function (request, response) {
 	});
 }
 
-var fs = require('fs');
+exports.style = function (request, response) {
+	fs.readFile('./css/style.css', "utf-8", function (error, file) {
+		response.writeHead(200, {"Content-Type": "text/css"});
+		response.write(file);
+		response.end();
+	});
+}
 
 exports.welcome = function (request, response) {
 	console.log('I starting handling the welcome request.');

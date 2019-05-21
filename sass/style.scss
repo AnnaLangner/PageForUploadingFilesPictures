@@ -1,8 +1,12 @@
-body {
-	bacground-color: #CCFFCC;	
+.box {
+	width: 400px;
+	border-radius: 4px;
+	border: 3px solid #339933;
+	background-color: #CCFFCC;	
 	font-family: 'Open Sans Condensed', sans-serif;
 	margin: 0 auto;
-	padding: 0;
+	padding: 10px;
+	text-align: center;
 
 	.title {
 		color: #66CC66;
@@ -10,36 +14,39 @@ body {
 	.sendForm {
 		.titleLabel {
 			color: #66CC66;
+			padding-right: 10px;
 		}
 		.titleFile {
 			width: 150px;
 			height: 22px;
 			border-radius: 4px;
 			color: #FFFFFF;
-			background-color: #CCFFFF;
-			border: 3px solid #99FF99;
+			background-color: #99FFCC;
+			border: 3px solid #339933;
 
 		}
 		.file {
 			color: #66CC66;
+			padding-right: 10px;
 		}
 		.filePick {
-			width: 100px;
+			width: 250px;
 			height: 22px;
 			border-radius: 4px;
 			color: #FFFFFF;
 			background-color: #339933;
 			border: 3px solid #339933;
-
+			margin-top: 20px;
 		}
 		.fileSend {
 			width: 100px;
 			height: 22px;
 			border-radius: 4px;
 			color: #FFFFFF;
-			background-color: #66FF66;
-			border: 3px solid #66FF66;
-
+			background-color: #339933;
+			border: 3px solid #339933;
+			margin-top: 20px;
+			margin-left: 80px;
 		}
 	}
 }

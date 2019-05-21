@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>Upload the file</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="/style">
 	</head>
-	<body> 
-		<h1 class="title">Upload the file</h1>
-		<form class="sendForm" action="/upload" enctype="multipart/form-data" method="post">
-			<label class="titleLabel">The title of the file</label>
-			<input type="text" name="title" class="titleFile">
-			<br>
-			<label class="file">File</label>
-			<input class="filePick" type="file" name="upload" multiple="multiple"><br>
-			<input class="fileSend" type="submit" name="Send">
-		</form>
+	<body>
+		<div class="box">
+			<h1 class="title">Upload the file</h1>
+			<form class="sendForm" action="/upload" enctype="multipart/form-data" method="post">
+				<label class="titleLabel">The title of the file</label>
+				<input type="text" name="title" class="titleFile">
+				<br>
+				<label class="file">File</label>
+				<input class="filePick" type="file" name="upload" multiple="multiple"><br>
+				<input class="fileSend" type="submit" name="Send">
+			</form>
+		</div>
 	</body>
 </html> 
