@@ -1,0 +1,13 @@
+body { bacground-color: #CCFFCC; font-family: 'Open Sans Condensed', sans-serif; margin: 0 auto; padding: 0; }
+
+body .title { color: #66CC66; }
+
+body .sendForm .titleLabel { color: #66CC66; }
+
+body .sendForm .titleFile { width: 150px; height: 22px; border-radius: 4px; color: #FFFFFF; background-color: #CCFFFF; border: 3px solid #99FF99; }
+
+body .sendForm .file { color: #66CC66; }
+
+body .sendForm .filePick { width: 100px; height: 22px; border-radius: 4px; color: #FFFFFF; background-color: #339933; border: 3px solid #339933; }
+
+body .sendForm .fileSend { width: 100px; height: 22px; border-radius: 4px; color: #FFFFFF; background-color: #66FF66; border: 3px solid #66FF66; }
