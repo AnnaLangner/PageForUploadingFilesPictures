@@ -2,16 +2,18 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset="utf-8">
+		<title>Upload the file</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body> 
-		<h1>Upload the file</h1>
-		<form action="/upload" enctype="multipart/form-data" method="post">
-			<label>The title of the file</label>
-			<input type="text" name="title">
+		<h1 class="title">Upload the file</h1>
+		<form class="sendForm" action="/upload" enctype="multipart/form-data" method="post">
+			<label class="titleLabel">The title of the file</label>
+			<input type="text" name="title" class="titleFile">
 			<br>
-			<label>File</label>
-			<input type="file" name="upload" multiple="multiple"><br>
-			<input type="submit" name="Send">
+			<label class="file">File</label>
+			<input class="filePick" type="file" name="upload" multiple="multiple"><br>
+			<input class="fileSend" type="submit" name="Send">
 		</form>
 	</body>
 </html> 
